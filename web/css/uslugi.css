@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Appetite';
+  src: url(../fonts/Appetite.ttf);
+}
+
+@font-face {
+  font-family: 'BlueCurve';
+  src: url(/fonts/BlueCurve.ttf);
+}
+
+body {
+  background-blend-mode: multiply;
+  background-image: url("/img/listikifon.png");
+}
+
+.zagol {
+  font-family: 'Appetite';
+  color: rgb(5, 134, 200);
+  text-shadow: 1px 1px 2px black;
+  margin-left: 0;
+  margin: 5px 0 0 0;
+}
+
+@media (max-width: 600px) {
+  .zagol {
+    margin: 0 0 0 5px;
+  }
+}
+
+.uslugi-index {
+  padding: 0 100px;
+}
+
+@media (max-width: 1200px) {
+  .uslugi-index {
+    padding: 0 20px;
+  }
+}
+
+/*----------------------------*/
+.nav-up {
+  display: flex;
+}
+
+.ul-nav-up {
+  list-style: none;
+  padding: 0;
+}
+
+.li-nav-up {
+  margin: 0 15px;
+}
+
+.a-nav-up {
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.a-nav-up:hover {
+  background-color: rgba(5, 135, 200, 0.253);
+  border-radius: 5px;
+  color: rgb(5, 134, 200);
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  margin: 20px 100px;
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .burger {
+      margin: 20px 5px;
+  }
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.burger.active .line1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active .line2 {
+  opacity: 0;
+}
+
+.burger.active .line3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+  display: none;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+@media (max-width: 600px) {
+  .menu {
+      right: 50px;
+  }
+}
+
+.menu .ul-nav-up {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .li-nav-up {
+  padding: 10px 20px;
+}
+
+.menu .li-nav-up .a-nav-up {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu.active {
+  display: block;
+  margin: 130px 0 0 0;
+}
+
+/*------------------------------- скрывает столбцы для телефона --------------------------------------*/
+@media (max-width: 767px) {
+  .hidd-for-phone {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 90%;
+  height: 100%;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.164);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+}
+@media (max-width: 600px) {
+  .card {
+    padding: 15px 5px;
+    width: 100%;
+  }
+}
+
+.status-now{
+  font-size: 19px;
+}
+
+
+.btn-del-sugg{
+  border: 1px solid rgba(255, 255, 255, .25);
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(158, 0, 0, 0.712);
+  padding: 5px 15px;
+}
+.form-delete{
+  text-align: right;
+}
+
+.dates{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+hr {
+  border: none; /* Убираем стандартные границы */
+  height: 1px; /* Высота полосы */
+  background-color: #a0a0a0; /* Цвет полосы */
+}
+
+.img-product{
+  width: 400px;
+}
+@media (max-width: 600px) {
+  .img-product{
+    width: 100%;
+  }
+}
+

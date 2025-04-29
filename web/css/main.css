@@ -1,0 +1,175 @@
+
+@font-face {
+  font-family: 'Appetite';
+  src: url(/fonts/Appetite.ttf);
+}
+
+@font-face {
+  font-family: 'BlueCurve';
+  src: url(/fonts/BlueCurve.ttf);
+}
+html {
+  scroll-behavior: smooth; 
+}
+body{
+ margin: 0;
+}
+.a{
+  background-color: transparent;
+  color: white;
+  transition-delay: 0s;
+  transition-duration: 1s;
+  text-shadow: 0 6px 6px rgba(0,0,0,1);
+ }
+.a:hover{
+  text-decoration: none;
+  color: yellowgreen;
+ transform: translate(0px, -4px);
+ text-shadow: 0 6px 6px rgba(0,0,0,1);
+}
+a:hover{
+  text-decoration: none;
+}
+
+
+.main{
+  margin: -60px 0 0 0;
+}
+
+/*-------------------------------------------------- Подвал --------------------------------------------------*/
+.footer{
+  background-color: rgb(41,49,51);
+  margin: 0 auto;
+  padding: 50px;
+  font-style: normal;
+  font-size: 15px;
+}
+@media(max-width: 600px){
+  .footer {
+    padding: 50px 0;
+  }
+}
+.contactflex{
+  display: flex;
+}
+@media(max-width: 1200px){
+  .contactflex {
+      display: grid;
+  }
+}
+.foot{
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+}
+@media(max-width: 600px){
+  .foot {
+    display: grid;
+    text-align: center;
+  }
+}
+.firstblfo{
+  margin: 0 auto;
+  width: auto;
+}
+@media(max-width: 1200px){
+  .firstblfo {
+      width: 300px;
+      padding: 0;
+  }
+}
+.footext{
+  color: white;
+  font-size: 15px;
+}
+.contacts{
+  color: white;
+  list-style-type: none;
+}
+@media(max-width: 600px){
+  .contacts {
+    padding: 0;
+  }
+}
+.lifoo{
+  margin: 0 0 10px 0;
+}
+.img-fluid{
+  width: 20px;
+}
+.fooh{
+  color: white;
+  text-align: center;
+}
+
+/*------------------------------------------- Модальное ------------------------------------------------------------*/
+
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, .7);
+  transition: all .4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+}
+
+.modal__footer {
+  text-align: right;
+  a {
+    color: #585858;
+  }
+  i {
+    color: #d02d2c;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #585858;
+  text-decoration: none;
+}
+
+
+.form-flex{
+margin: 200px auto;
+width: 300px;
+}
+
+.chonari{
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  float:right;
+}
+@media(max-width: 600px){
+  .chonari{
+  font-size: 10px;
+  margin: 0 10px;
+}
+}
+
+.name-footer{
+font-family: 'Appetite';
+}
